@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->foreignUuid('course_session_id')->constrained('course_sessions')->cascadeOnDelete();
             $table->foreignUuid('module_id')->constrained('modules')->cascadeOnDelete();
-            $table->foreignUuid('instructor_id')->constrained('users')->nullOnDelete();
+            $table->foreignUuid('instructor_id')->nullable()->constrained('users')->nullOnDelete();
 
             // Historique: dates de début et fin d'assignation
             $table->timestamp('started_at')->nullable();
