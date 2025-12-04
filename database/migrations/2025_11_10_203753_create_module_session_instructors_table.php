@@ -24,8 +24,8 @@ return new class extends Migration
             $table->timestamps();
 
             // Index pour optimiser les requêtes sur instructeurs actifs
-            $table->index('ended_at');
-            $table->index(['course_session_id', 'module_id', 'ended_at']);
+            $table->index('ended_at', 'msi_ended_at_index');
+            $table->index(['course_session_id', 'module_id', 'ended_at'], 'msi_session_module_ended_index');
         });
     }
 
