@@ -45,7 +45,7 @@ jobs:
           echo "DB_PASSWORD=password" >> .env.testing
 
       - name: Run migrations
-        run: php artisan migrate --seed --env=testing --force
+        run: php artisan migrate --seed --env=testing --force     
 
       # - name: Run PHPStan
       #   run: vendor/bin/phpstan analyse
