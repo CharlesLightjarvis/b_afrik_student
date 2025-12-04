@@ -4,7 +4,7 @@ set -e
 
 echo "🚀 Déploiement en cours..."
 
-APP_DIR="/var/www/zetta_api"
+APP_DIR="/var/www/b_afrik_student"
 PHP_BIN="php8.3"
 COMPOSER_BIN="/usr/local/bin/composer"  # adapte si besoin, ex: /usr/bin/composer
 
